@@ -20,6 +20,3 @@ def Solution(stringOri):
 
 print(Solution("hello"))
 
-
-
-#
