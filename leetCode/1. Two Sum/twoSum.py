@@ -1,11 +1,10 @@
-def Solution(array, target):
-    for i in range(1,len(array)):
-        for j in range(2, len(array)):
-            if eval(array[i]) + eval(array[j]) == eval(target):
-                return [i-1, j-1]
+def Solution(nums: List[int], target) -> List[int]:
+    for i in range(0,len(nums)):
+        for c in range(i, len(nums)):
+            if(nums[i] + nums[c] == target):
+                    return [i,c]                  
+    
+nums = input().split()
+target = int(input())
 
-
-num = input().replace(',','')
-target = input()
-
-print(Solution(num, target))
+print(Solution(nums, target))
